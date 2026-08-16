@@ -1,0 +1,91 @@
+{
+  "overall_summary": {
+    "total_numbers_in_report": 396,
+    "total_grounded": 396,
+    "total_ungrounded": 0,
+    "overall_grounding_precision_pct": 100.0,
+    "overall_status": "PASS"
+  },
+  "section_evaluations": [
+    {
+      "section_id": "reporting_period",
+      "section_name": "Reporting Period and Product Identification",
+      "total_numbers_mentioned": 11,
+      "grounded_numbers_count": 11,
+      "ungrounded_numbers_count": 0,
+      "grounding_precision_pct": 100.0,
+      "ungrounded_tokens": [],
+      "status": "PASS"
+    },
+    {
+      "section_id": "narrative_summary",
+      "section_name": "Narrative Summary and Overall Safety Analysis",
+      "total_numbers_mentioned": 39,
+      "grounded_numbers_count": 39,
+      "ungrounded_numbers_count": 0,
+      "grounding_precision_pct": 100.0,
+      "ungrounded_tokens": [],
+      "status": "PASS"
+    },
+    {
+      "section_id": "case_demographics",
+      "section_name": "Summary Analysis of Cases (Demographics and Geography)",
+      "total_numbers_mentioned": 57,
+      "grounded_numbers_count": 57,
+      "ungrounded_numbers_count": 0,
+      "grounding_precision_pct": 100.0,
+      "ungrounded_tokens": [],
+      "status": "PASS"
+    },
+    {
+      "section_id": "adverse_events",
+      "section_name": "Reaction and Adverse Event Analysis",
+      "total_numbers_mentioned": 66,
+      "grounded_numbers_count": 66,
+      "ungrounded_numbers_count": 0,
+      "grounding_precision_pct": 100.0,
+      "ungrounded_tokens": [],
+      "status": "PASS"
+    },
+    {
+      "section_id": "serious_alert_cases",
+      "section_name": "Serious Cases and 15-Day Alert Reports",
+      "total_numbers_mentioned": 18,
+      "grounded_numbers_count": 18,
+      "ungrounded_numbers_count": 0,
+      "grounding_precision_pct": 100.0,
+      "ungrounded_tokens": [],
+      "status": "PASS"
+    },
+    {
+      "section_id": "trends_observations",
+      "section_name": "Trends and Important Observations",
+      "total_numbers_mentioned": 60,
+      "grounded_numbers_count": 60,
+      "ungrounded_numbers_count": 0,
+      "grounding_precision_pct": 100.0,
+      "ungrounded_tokens": [],
+      "status": "PASS"
+    },
+    {
+      "section_id": "history_of_actions",
+      "section_name": "History of Safety Actions Taken",
+      "total_numbers_mentioned": 0,
+      "grounded_numbers_count": 0,
+      "ungrounded_numbers_count": 0,
+      "grounding_precision_pct": 100.0,
+      "ungrounded_tokens": [],
+      "status": "PASS"
+    },
+    {
+      "section_id": "case_index",
+      "section_name": "Line Listing and Case Index",
+      "total_numbers_mentioned": 145,
+      "grounded_numbers_count": 145,
+      "ungrounded_numbers_count": 0,
+      "grounding_precision_pct": 100.0,
+      "ungrounded_tokens": [],
+      "status": "PASS"
+    }
+  ]
+}

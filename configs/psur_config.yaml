@@ -1,0 +1,50 @@
+report_type: "PSUR"
+title: "Periodic Safety Update Report (ICH E2C / PSUR)"
+product_name: "Bisoprolol"
+regulatory_framework: "ICH Guideline E2C(R2) / EMA Module VII"
+version: "1.0"
+
+sections:
+  - name: "Executive Summary"
+    section_id: "psur_exec_summary"
+    display_order: 1
+    format_type: "prose_and_tables"
+    analyses:
+      - total_cases
+      - serious_vs_nonserious
+      - alert_cases_summary
+    instructions: >
+      Provide a concise high-level overview of global post-marketing safety data received during the reporting interval.
+      Summarize cumulative case volume and serious vs non-serious distribution in neutral regulatory language.
+
+  - name: "Worldwide Marketing Authorization Status and Actions"
+    section_id: "psur_marketing_status"
+    display_order: 2
+    format_type: "prose_and_tables"
+    analyses: []
+    instructions: >
+      No worldwide marketing authorization or regulatory action dataset was supplied for this reporting interval.
+      State this administrative limitation directly.
+
+  - name: "Tabulation of Individual Case Safety Reports (Demographic and Geographic Overview)"
+    section_id: "psur_case_tabulations"
+    display_order: 3
+    format_type: "prose_and_tables"
+    analyses:
+      - breakdown_by_age
+      - breakdown_by_sex
+      - breakdown_by_country
+    instructions: >
+      Present stratified interval case tabulations by age category, biological sex, and geographic territory.
+
+  - name: "Summary of Adverse Drug Reactions by Preferred Term"
+    section_id: "psur_adr_summary"
+    display_order: 4
+    format_type: "prose_and_tables"
+    analyses:
+      - top_reactions
+      - top_serious_reactions
+      - outcomes_summary
+    instructions: >
+      Present observed MedDRA Preferred Terms and clinical outcomes. Note that System Organ Class classification
+      is omitted due to raw dataset constraints.

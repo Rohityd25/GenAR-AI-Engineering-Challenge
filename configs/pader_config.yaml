@@ -1,0 +1,101 @@
+report_type: "PADER"
+title: "Postmarketing Adverse Drug Experience Report (PADER)"
+product_name: "Bisoprolol"
+regulatory_framework: "US FDA 21 CFR 314.80(c)(2)"
+version: "1.0"
+
+sections:
+  - name: "Reporting Period and Product Identification"
+    section_id: "reporting_period"
+    display_order: 1
+    format_type: "metadata_only"
+    analyses: []
+    instructions: >
+      State the medicinal product name, report type (PADER), and reporting interval derived dynamically
+      from the receivedate boundaries. Provide administrative metadata plainly. Do not add narrative interpretation.
+
+  - name: "Narrative Summary and Overall Safety Analysis"
+    section_id: "narrative_summary"
+    display_order: 2
+    format_type: "prose_and_tables"
+    analyses:
+      - total_cases
+      - serious_vs_nonserious
+      - top_reactions
+      - top_serious_reactions
+      - outcomes_summary
+    instructions: >
+      Synthesize the high-level safety findings strictly from the provided data.
+      Summarize only the pre-computed figures. Distinguish observed raw occurrences from derived aggregates.
+      Maintain a neutral, objective regulatory tone. Do NOT conclude that 'no safety concerns were identified'
+      or make clinical causality claims not established in the evidence packet.
+
+  - name: "Summary Analysis of Cases (Demographics and Geography)"
+    section_id: "case_demographics"
+    display_order: 3
+    format_type: "prose_and_tables"
+    analyses:
+      - total_cases
+      - serious_vs_nonserious
+      - breakdown_by_age
+      - breakdown_by_sex
+      - breakdown_by_country
+    instructions: >
+      Present patient demographic distributions (age brackets, sex) and geographic distribution based on occurcountry.
+      Explain that age is normalized to years and binned into standardized categories (<18, 18-64, 65-74, 75+, Unknown).
+      Note that occurcountry was selected as the primary geographic field and state the number of cases where occurcountry
+      diverged from reportercountry.
+
+  - name: "Reaction and Adverse Event Analysis"
+    section_id: "adverse_events"
+    display_order: 4
+    format_type: "prose_and_tables"
+    analyses:
+      - top_reactions
+      - top_serious_reactions
+    instructions: >
+      Detail the most frequently reported adverse reactions. Explicitly state that no System Organ Class (SOC)
+      field was provided in the raw dataset, so analysis is presented strictly at the MedDRA Preferred Term (PT) level.
+      Do not invent or infer SOC hierarchies.
+
+  - name: "Serious Cases and 15-Day Alert Reports"
+    section_id: "serious_alert_cases"
+    display_order: 5
+    format_type: "prose_and_tables"
+    analyses:
+      - alert_cases_summary
+      - serious_vs_nonserious
+    instructions: >
+      Summarize cases fulfilling 15-day expedited reporting criteria versus non-expedited cases.
+      Review the non-mutually exclusive seriousness criteria (death, life-threatening, hospitalization, disability,
+      congenital anomaly, other medically important condition). Clarify that sub-criteria flags do not partition the cases.
+
+  - name: "Trends and Important Observations"
+    section_id: "trends_observations"
+    display_order: 6
+    format_type: "prose_and_tables"
+    analyses:
+      - trend_over_time
+    instructions: >
+      Present observed monthly case intake volume across the reporting period.
+      Characterize numeric shifts objectively as reporting trends (e.g. intake peaks or valleys) without asserting
+      unsubstantiated clinical causality or declaring a confirmed safety signal.
+
+  - name: "History of Safety Actions Taken"
+    section_id: "history_of_actions"
+    display_order: 7
+    format_type: "prose_and_tables"
+    analyses: []
+    instructions: >
+      No history-of-actions data was supplied in the dataset for this reporting exercise.
+      State this limitation explicitly and concisely. Do not fabricate regulatory or marketing actions.
+
+  - name: "Line Listing and Case Index"
+    section_id: "case_index"
+    display_order: 8
+    format_type: "tabular_only"
+    analyses:
+      - case_listing
+    instructions: >
+      Provide a structured index listing of representative cases (Safety Report ID, Receive Date, Country, Age, Sex,
+      Seriousness, Expedited status, Reactions, Outcome). Tabular presentation only; no narrative synthesis needed.

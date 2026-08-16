@@ -1,0 +1,51 @@
+{
+  "overall_summary": {
+    "total_numbers_in_report": 0,
+    "total_grounded": 0,
+    "total_ungrounded": 0,
+    "overall_grounding_precision_pct": 100.0,
+    "overall_status": "PASS"
+  },
+  "section_evaluations": [
+    {
+      "section_id": "psur_exec_summary",
+      "section_name": "Executive Summary",
+      "total_numbers_mentioned": 0,
+      "grounded_numbers_count": 0,
+      "ungrounded_numbers_count": 0,
+      "grounding_precision_pct": 100.0,
+      "ungrounded_tokens": [],
+      "status": "PASS"
+    },
+    {
+      "section_id": "psur_marketing_status",
+      "section_name": "Worldwide Marketing Authorization Status and Actions",
+      "total_numbers_mentioned": 0,
+      "grounded_numbers_count": 0,
+      "ungrounded_numbers_count": 0,
+      "grounding_precision_pct": 100.0,
+      "ungrounded_tokens": [],
+      "status": "PASS"
+    },
+    {
+      "section_id": "psur_case_tabulations",
+      "section_name": "Tabulation of Individual Case Safety Reports (Demographic and Geographic Overview)",
+      "total_numbers_mentioned": 0,
+      "grounded_numbers_count": 0,
+      "ungrounded_numbers_count": 0,
+      "grounding_precision_pct": 100.0,
+      "ungrounded_tokens": [],
+      "status": "PASS"
+    },
+    {
+      "section_id": "psur_adr_summary",
+      "section_name": "Summary of Adverse Drug Reactions by Preferred Term",
+      "total_numbers_mentioned": 0,
+      "grounded_numbers_count": 0,
+      "ungrounded_numbers_count": 0,
+      "grounding_precision_pct": 100.0,
+      "ungrounded_tokens": [],
+      "status": "PASS"
+    }
+  ]
+}

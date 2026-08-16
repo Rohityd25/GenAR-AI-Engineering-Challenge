@@ -1,0 +1,1013 @@
+{
+  "total_cases": {
+    "unique_cases": 1024,
+    "total_reaction_rows": 1068,
+    "total_pt_mentions": 3648,
+    "distinct_pt_count": 1122,
+    "aggregation_level": "Case-level count based on unique safetyreportid; reaction count based on raw line listings."
+  },
+  "serious_vs_nonserious": {
+    "total_cases": 1024,
+    "serious_cases": 1023,
+    "serious_percentage": 99.9,
+    "nonserious_cases": 1,
+    "nonserious_percentage": 0.1,
+    "seriousness_criteria": {
+      "Death": {
+        "count": 67,
+        "percentage": 6.54
+      },
+      "Life-Threatening": {
+        "count": 105,
+        "percentage": 10.25
+      },
+      "Hospitalization / Prolongation": {
+        "count": 480,
+        "percentage": 46.88
+      },
+      "Disability / Incapacity": {
+        "count": 43,
+        "percentage": 4.2
+      },
+      "Congenital Anomaly": {
+        "count": 7,
+        "percentage": 0.68
+      },
+      "Other Medically Important Condition": {
+        "count": 905,
+        "percentage": 88.38
+      }
+    },
+    "methodological_note": "Seriousness criteria flags are non-mutually exclusive; a single case may meet multiple criteria."
+  },
+  "breakdown_by_age": {
+    "total_cases": 1024,
+    "age_distribution": [
+      {
+        "age_group": "Pediatric (<18 years)",
+        "count": 19,
+        "percentage": 1.86
+      },
+      {
+        "age_group": "Adult (18-64 years)",
+        "count": 248,
+        "percentage": 24.22
+      },
+      {
+        "age_group": "Elderly (65-74 years)",
+        "count": 266,
+        "percentage": 25.98
+      },
+      {
+        "age_group": "Elderly (75+ years)",
+        "count": 407,
+        "percentage": 39.75
+      },
+      {
+        "age_group": "Unknown / Not Reported",
+        "count": 84,
+        "percentage": 8.2
+      }
+    ],
+    "statistics": {
+      "mean_age": 69.9,
+      "median_age": 72.0,
+      "min_age": 0.1,
+      "max_age": 104.0,
+      "total_with_numeric_age": 940
+    },
+    "bucketing_rules": "Ages normalized from patient_patientonsetageunit (days/months/years) to years. Bins: <18, 18-64, 65-74, 75+, Unknown."
+  },
+  "breakdown_by_sex": {
+    "total_cases": 1024,
+    "sex_distribution": [
+      {
+        "sex": "Female",
+        "count": 503,
+        "percentage": 49.12
+      },
+      {
+        "sex": "Male",
+        "count": 493,
+        "percentage": 48.14
+      },
+      {
+        "sex": "Unknown / Not Reported",
+        "count": 28,
+        "percentage": 2.73
+      }
+    ]
+  },
+  "breakdown_by_country": {
+    "total_cases": 1024,
+    "country_distribution": [
+      {
+        "country": "Eu",
+        "count": 325,
+        "percentage": 31.74
+      },
+      {
+        "country": "United Kingdom",
+        "count": 278,
+        "percentage": 27.15
+      },
+      {
+        "country": "France",
+        "count": 187,
+        "percentage": 18.26
+      },
+      {
+        "country": "Canada",
+        "count": 55,
+        "percentage": 5.37
+      },
+      {
+        "country": "Italy",
+        "count": 52,
+        "percentage": 5.08
+      },
+      {
+        "country": "Germany",
+        "count": 39,
+        "percentage": 3.81
+      },
+      {
+        "country": "Spain",
+        "count": 26,
+        "percentage": 2.54
+      },
+      {
+        "country": "Poland",
+        "count": 21,
+        "percentage": 2.05
+      },
+      {
+        "country": "Portugal",
+        "count": 9,
+        "percentage": 0.88
+      },
+      {
+        "country": "Unknown / Not Reported",
+        "count": 7,
+        "percentage": 0.68
+      },
+      {
+        "country": "Other Countries",
+        "count": 25,
+        "percentage": 2.44
+      }
+    ],
+    "unique_countries_count": 22,
+    "primary_field": "occurcountry",
+    "reportercountry_divergence_cases": 8,
+    "note": "occurcountry was chosen as primary geographic indicator. Divergence with primarysource_reportercountry was observed in 8 cases."
+  },
+  "top_reactions": {
+    "total_pt_mentions": 3648,
+    "unique_pt_count": 1122,
+    "top_reactions": [
+      {
+        "preferred_term": "Acute kidney injury",
+        "count": 81,
+        "percentage_of_pt_mentions": 2.22
+      },
+      {
+        "preferred_term": "Drug ineffective",
+        "count": 60,
+        "percentage_of_pt_mentions": 1.64
+      },
+      {
+        "preferred_term": "Hypotension",
+        "count": 48,
+        "percentage_of_pt_mentions": 1.32
+      },
+      {
+        "preferred_term": "Drug interaction",
+        "count": 45,
+        "percentage_of_pt_mentions": 1.23
+      },
+      {
+        "preferred_term": "Dizziness",
+        "count": 40,
+        "percentage_of_pt_mentions": 1.1
+      },
+      {
+        "preferred_term": "Bradycardia",
+        "count": 39,
+        "percentage_of_pt_mentions": 1.07
+      },
+      {
+        "preferred_term": "Dyspnoea",
+        "count": 39,
+        "percentage_of_pt_mentions": 1.07
+      },
+      {
+        "preferred_term": "Fatigue",
+        "count": 35,
+        "percentage_of_pt_mentions": 0.96
+      },
+      {
+        "preferred_term": "Off label use",
+        "count": 34,
+        "percentage_of_pt_mentions": 0.93
+      },
+      {
+        "preferred_term": "Diarrhoea",
+        "count": 33,
+        "percentage_of_pt_mentions": 0.9
+      },
+      {
+        "preferred_term": "Fall",
+        "count": 32,
+        "percentage_of_pt_mentions": 0.88
+      },
+      {
+        "preferred_term": "Condition aggravated",
+        "count": 30,
+        "percentage_of_pt_mentions": 0.82
+      },
+      {
+        "preferred_term": "Asthenia",
+        "count": 28,
+        "percentage_of_pt_mentions": 0.77
+      },
+      {
+        "preferred_term": "Medication error",
+        "count": 27,
+        "percentage_of_pt_mentions": 0.74
+      },
+      {
+        "preferred_term": "Hypokalaemia",
+        "count": 27,
+        "percentage_of_pt_mentions": 0.74
+      }
+    ],
+    "granularity": "MedDRA Preferred Term (PT) level. (System Organ Class grouping unavailable in raw dataset)."
+  },
+  "top_serious_reactions": {
+    "total_serious_pt_mentions": 3645,
+    "unique_serious_pt_count": 1121,
+    "top_serious_reactions": [
+      {
+        "preferred_term": "Acute kidney injury",
+        "count": 81,
+        "percentage_of_serious_pt_mentions": 2.22
+      },
+      {
+        "preferred_term": "Drug ineffective",
+        "count": 59,
+        "percentage_of_serious_pt_mentions": 1.62
+      },
+      {
+        "preferred_term": "Hypotension",
+        "count": 48,
+        "percentage_of_serious_pt_mentions": 1.32
+      },
+      {
+        "preferred_term": "Drug interaction",
+        "count": 45,
+        "percentage_of_serious_pt_mentions": 1.23
+      },
+      {
+        "preferred_term": "Dizziness",
+        "count": 40,
+        "percentage_of_serious_pt_mentions": 1.1
+      },
+      {
+        "preferred_term": "Bradycardia",
+        "count": 39,
+        "percentage_of_serious_pt_mentions": 1.07
+      },
+      {
+        "preferred_term": "Dyspnoea",
+        "count": 39,
+        "percentage_of_serious_pt_mentions": 1.07
+      },
+      {
+        "preferred_term": "Fatigue",
+        "count": 35,
+        "percentage_of_serious_pt_mentions": 0.96
+      },
+      {
+        "preferred_term": "Off label use",
+        "count": 34,
+        "percentage_of_serious_pt_mentions": 0.93
+      },
+      {
+        "preferred_term": "Diarrhoea",
+        "count": 33,
+        "percentage_of_serious_pt_mentions": 0.91
+      },
+      {
+        "preferred_term": "Fall",
+        "count": 32,
+        "percentage_of_serious_pt_mentions": 0.88
+      },
+      {
+        "preferred_term": "Condition aggravated",
+        "count": 30,
+        "percentage_of_serious_pt_mentions": 0.82
+      },
+      {
+        "preferred_term": "Asthenia",
+        "count": 28,
+        "percentage_of_serious_pt_mentions": 0.77
+      },
+      {
+        "preferred_term": "Medication error",
+        "count": 27,
+        "percentage_of_serious_pt_mentions": 0.74
+      },
+      {
+        "preferred_term": "Hypokalaemia",
+        "count": 27,
+        "percentage_of_serious_pt_mentions": 0.74
+      }
+    ]
+  },
+  "outcomes_summary": {
+    "total_outcome_records": 3642,
+    "outcomes_distribution": [
+      {
+        "outcome": "Recovered / Resolved",
+        "raw_value": "recovered/resolved",
+        "count": 1347,
+        "percentage": 36.99
+      },
+      {
+        "outcome": "Unknown / Not Reported",
+        "raw_value": "unknown",
+        "count": 1135,
+        "percentage": 31.16
+      },
+      {
+        "outcome": "Not Recovered / Not Resolved / Ongoing",
+        "raw_value": "not recovered/not resolved/ongoing",
+        "count": 569,
+        "percentage": 15.62
+      },
+      {
+        "outcome": "Recovering / Resolving",
+        "raw_value": "recovering/resolving",
+        "count": 420,
+        "percentage": 11.53
+      },
+      {
+        "outcome": "Fatal",
+        "raw_value": "fatal",
+        "count": 137,
+        "percentage": 3.76
+      },
+      {
+        "outcome": "Recovered / Resolved with Sequelae",
+        "raw_value": "recovered/resolved with sequelae",
+        "count": 34,
+        "percentage": 0.93
+      }
+    ],
+    "methodological_note": "Outcomes are recorded at the reaction level; individual patients may have multiple reactions with differing outcomes."
+  },
+  "trend_over_time": {
+    "total_cases_analyzed": 1024,
+    "monthly_trend": [
+      {
+        "period": "2024-12",
+        "count": 21,
+        "percentage": 2.05
+      },
+      {
+        "period": "2025-01",
+        "count": 75,
+        "percentage": 7.32
+      },
+      {
+        "period": "2025-02",
+        "count": 94,
+        "percentage": 9.18
+      },
+      {
+        "period": "2025-03",
+        "count": 83,
+        "percentage": 8.11
+      },
+      {
+        "period": "2025-04",
+        "count": 78,
+        "percentage": 7.62
+      },
+      {
+        "period": "2025-05",
+        "count": 80,
+        "percentage": 7.81
+      },
+      {
+        "period": "2025-06",
+        "count": 84,
+        "percentage": 8.2
+      },
+      {
+        "period": "2025-07",
+        "count": 109,
+        "percentage": 10.64
+      },
+      {
+        "period": "2025-08",
+        "count": 64,
+        "percentage": 6.25
+      },
+      {
+        "period": "2025-09",
+        "count": 76,
+        "percentage": 7.42
+      },
+      {
+        "period": "2025-10",
+        "count": 102,
+        "percentage": 9.96
+      },
+      {
+        "period": "2025-11",
+        "count": 75,
+        "percentage": 7.32
+      },
+      {
+        "period": "2025-12",
+        "count": 83,
+        "percentage": 8.11
+      }
+    ],
+    "summary_statistics": {
+      "monthly_mean": 78.8,
+      "monthly_min": 21,
+      "monthly_max": 109,
+      "peak_month": "2025-07"
+    },
+    "interpretive_caution": "Numeric trends reflect spontaneous reporting intake over time and do not represent incidence rates or confirmed safety signals."
+  },
+  "alert_cases_summary": {
+    "total_cases": 1024,
+    "expedited_15_day_alert_cases": 1023,
+    "expedited_percentage": 99.9,
+    "non_expedited_cases": 1,
+    "non_expedited_percentage": 0.1,
+    "serious_expedited_cases": 1023,
+    "fatal_cases": 67,
+    "regulatory_context": "Cases fulfilling expedite criteria require 15-day alert submission to regulatory authorities."
+  },
+  "case_listing": {
+    "sample_size": 50,
+    "total_cases": 1024,
+    "listings": [
+      {
+        "safetyreportid": "24780403",
+        "receivedate": "20241227",
+        "country": "Italy",
+        "age": "85",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Rectal haemorrhage,Deficiency anaemia",
+        "outcome": "unknown,unknown"
+      },
+      {
+        "safetyreportid": "24780599",
+        "receivedate": "20241227",
+        "country": "France",
+        "age": "69",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Coma",
+        "outcome": "recovered/resolved"
+      },
+      {
+        "safetyreportid": "24780680",
+        "receivedate": "20241227",
+        "country": "France",
+        "age": "85",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Acute kidney injury",
+        "outcome": "recovered/resolved"
+      },
+      {
+        "safetyreportid": "24784771",
+        "receivedate": "20241228",
+        "country": "United Kingdom",
+        "age": "86",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Muscle spasms",
+        "outcome": "recovered/resolved"
+      },
+      {
+        "safetyreportid": "24784845",
+        "receivedate": "20241228",
+        "country": "United Kingdom",
+        "age": "35",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Chest pain,Anxiety,Panic attack",
+        "outcome": "not recovered/not resolved/ongoing,recovering/resolving,recovering/resolving"
+      },
+      {
+        "safetyreportid": "24784920",
+        "receivedate": "20241228",
+        "country": "United Kingdom",
+        "age": "60",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Genital burning sensation",
+        "outcome": "not recovered/not resolved/ongoing"
+      },
+      {
+        "safetyreportid": "24784985",
+        "receivedate": "20241228",
+        "country": "United Kingdom",
+        "age": "78",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Pemphigoid",
+        "outcome": "unknown"
+      },
+      {
+        "safetyreportid": "24784989",
+        "receivedate": "20241228",
+        "country": "United Kingdom",
+        "age": "59",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Drug interaction,Hypersensitivity",
+        "outcome": "unknown,unknown"
+      },
+      {
+        "safetyreportid": "24787006",
+        "receivedate": "20241230",
+        "country": "United Kingdom",
+        "age": "59",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Bradycardia,Medication error",
+        "outcome": "not recovered/not resolved/ongoing,unknown"
+      },
+      {
+        "safetyreportid": "24787240",
+        "receivedate": "20241230",
+        "country": "United Kingdom",
+        "age": "45",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Muscle twitching,Muscle spasms",
+        "outcome": "not recovered/not resolved/ongoing,not recovered/not resolved/ongoing"
+      },
+      {
+        "safetyreportid": "24787307",
+        "receivedate": "20241230",
+        "country": "United Kingdom",
+        "age": "64",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Cardiac arrest",
+        "outcome": "recovering/resolving"
+      },
+      {
+        "safetyreportid": "24787627",
+        "receivedate": "20241230",
+        "country": "Italy",
+        "age": "88",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Hypoglycaemia,Acidosis",
+        "outcome": "recovering/resolving,recovering/resolving"
+      },
+      {
+        "safetyreportid": "24788122",
+        "receivedate": "20241230",
+        "country": "Italy",
+        "age": "63",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Erectile dysfunction,Condition aggravated,Drug ineffective",
+        "outcome": "recovering/resolving,recovering/resolving,unknown"
+      },
+      {
+        "safetyreportid": "24791327",
+        "receivedate": "20241231",
+        "country": "France",
+        "age": "81",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Cardiac failure",
+        "outcome": "not recovered/not resolved/ongoing"
+      },
+      {
+        "safetyreportid": "24791598",
+        "receivedate": "20241231",
+        "country": "France",
+        "age": "72",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Hepatic cytolysis",
+        "outcome": "recovering/resolving"
+      },
+      {
+        "safetyreportid": "24791831",
+        "receivedate": "20241231",
+        "country": "United Kingdom",
+        "age": "UNK",
+        "sex": "Nan",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Cardiogenic shock",
+        "outcome": "unknown"
+      },
+      {
+        "safetyreportid": "24792345",
+        "receivedate": "20241231",
+        "country": "United Kingdom",
+        "age": "UNK",
+        "sex": "Nan",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Atrioventricular block",
+        "outcome": "unknown"
+      },
+      {
+        "safetyreportid": "24792691",
+        "receivedate": "20241231",
+        "country": "France",
+        "age": "77",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Pseudoporphyria",
+        "outcome": "recovering/resolving"
+      },
+      {
+        "safetyreportid": "24792889",
+        "receivedate": "20241231",
+        "country": "Spain",
+        "age": "87",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Hyponatraemia,Hypervolaemia,Cardiac failure",
+        "outcome": "recovered/resolved,recovered/resolved,recovered/resolved"
+      },
+      {
+        "safetyreportid": "24793431",
+        "receivedate": "20241231",
+        "country": "France",
+        "age": "70",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Dyskinesia",
+        "outcome": "not recovered/not resolved/ongoing"
+      },
+      {
+        "safetyreportid": "24795574",
+        "receivedate": "20241231",
+        "country": "United Kingdom",
+        "age": "62",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Oxygen saturation decreased,Cardiac failure congestive,Dyspnoea",
+        "outcome": "unknown,recovered/resolved with sequelae,recovered/resolved with sequelae"
+      },
+      {
+        "safetyreportid": "24795755",
+        "receivedate": "20250101",
+        "country": "United Kingdom",
+        "age": "78",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Acute kidney injury",
+        "outcome": "recovered/resolved"
+      },
+      {
+        "safetyreportid": "24796067",
+        "receivedate": "20250101",
+        "country": "United Kingdom",
+        "age": "77",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Leg amputation",
+        "outcome": "recovered/resolved"
+      },
+      {
+        "safetyreportid": "24796224",
+        "receivedate": "20250101",
+        "country": "France",
+        "age": "70",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Dyskinesia",
+        "outcome": "not recovered/not resolved/ongoing"
+      },
+      {
+        "safetyreportid": "24798336",
+        "receivedate": "20250102",
+        "country": "Spain",
+        "age": "72",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Inappropriate antidiuretic hormone secretion,Hyponatraemia,Craniocerebral injury,Haemorrhage intracranial",
+        "outcome": "recovered/resolved,recovered/resolved,recovered/resolved,recovered/resolved"
+      },
+      {
+        "safetyreportid": "24803041",
+        "receivedate": "20250103",
+        "country": "Spain",
+        "age": "UNK",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Hyponatraemia",
+        "outcome": "recovered/resolved"
+      },
+      {
+        "safetyreportid": "24803117",
+        "receivedate": "20250103",
+        "country": "United Kingdom",
+        "age": "81",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Hepatic enzyme increased",
+        "outcome": "unknown"
+      },
+      {
+        "safetyreportid": "24803128",
+        "receivedate": "20250103",
+        "country": "Spain",
+        "age": "UNK",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Haematemesis",
+        "outcome": "recovered/resolved"
+      },
+      {
+        "safetyreportid": "24802877",
+        "receivedate": "20250103",
+        "country": "France",
+        "age": "63",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Acute kidney injury",
+        "outcome": "recovered/resolved"
+      },
+      {
+        "safetyreportid": "24803463",
+        "receivedate": "20250103",
+        "country": "France",
+        "age": "52",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Hepatic cytolysis",
+        "outcome": "recovered/resolved with sequelae"
+      },
+      {
+        "safetyreportid": "24806665",
+        "receivedate": "20250104",
+        "country": "France",
+        "age": "UNK",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Foetal growth restriction,Medically induced preterm birth,Maternal exposure during pregnancy",
+        "outcome": "not recovered/not resolved/ongoing,recovered/resolved,recovered/resolved"
+      },
+      {
+        "safetyreportid": "24806832",
+        "receivedate": "20250104",
+        "country": "Portugal",
+        "age": "90",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Cardio-respiratory arrest",
+        "outcome": "recovered/resolved"
+      },
+      {
+        "safetyreportid": "24806812",
+        "receivedate": "20250104",
+        "country": "Germany",
+        "age": "UNK",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Sudden onset of sleep,Sleep disorder,Somnolence,Disturbance in attention,General physical health deterioration,Gamma-glutamyltransferase increased",
+        "outcome": "unknown,unknown,unknown,unknown,unknown,unknown"
+      },
+      {
+        "safetyreportid": "24806776",
+        "receivedate": "20250104",
+        "country": "Poland",
+        "age": "86",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Sinus bradycardia,Drug ineffective",
+        "outcome": "unknown,unknown"
+      },
+      {
+        "safetyreportid": "24807274",
+        "receivedate": "20250105",
+        "country": "Portugal",
+        "age": "89",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "BRASH syndrome",
+        "outcome": "recovered/resolved"
+      },
+      {
+        "safetyreportid": "24809124",
+        "receivedate": "20250106",
+        "country": "Italy",
+        "age": "59",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Cough,Chest discomfort,Dyspnoea",
+        "outcome": "recovered/resolved,recovered/resolved,recovered/resolved"
+      },
+      {
+        "safetyreportid": "24812900",
+        "receivedate": "20250107",
+        "country": "France",
+        "age": "71",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Dilated cardiomyopathy",
+        "outcome": "not recovered/not resolved/ongoing"
+      },
+      {
+        "safetyreportid": "24812977",
+        "receivedate": "20250107",
+        "country": "Germany",
+        "age": "56",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Suicide attempt,Intentional overdose",
+        "outcome": "unknown,unknown"
+      },
+      {
+        "safetyreportid": "24813219",
+        "receivedate": "20250107",
+        "country": "France",
+        "age": "78",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Pancytopenia",
+        "outcome": "fatal"
+      },
+      {
+        "safetyreportid": "24813415",
+        "receivedate": "20250107",
+        "country": "France",
+        "age": "91",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Cutaneous vasculitis,Vascular purpura",
+        "outcome": "recovering/resolving,recovering/resolving"
+      },
+      {
+        "safetyreportid": "24815412",
+        "receivedate": "20250107",
+        "country": "France",
+        "age": "UNK",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Bradycardia foetal,Neonatal respiratory distress,Microencephaly,Neonatal behavioural syndrome,Maternal exposure during pregnancy,Foetal growth restriction",
+        "outcome": "recovered/resolved,recovered/resolved,not recovered/not resolved/ongoing,recovered/resolved,not recovered/not resolved/ongoing,recovered/resolved"
+      },
+      {
+        "safetyreportid": "24816890",
+        "receivedate": "20250107",
+        "country": "France",
+        "age": "67",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Hepatic cytolysis",
+        "outcome": "recovering/resolving"
+      },
+      {
+        "safetyreportid": "24813208",
+        "receivedate": "20250107",
+        "country": "Germany",
+        "age": "66",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Urostomy complication",
+        "outcome": "recovered/resolved"
+      },
+      {
+        "safetyreportid": "24822547",
+        "receivedate": "20250109",
+        "country": "United Kingdom",
+        "age": "80",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Symptom masked",
+        "outcome": "unknown"
+      },
+      {
+        "safetyreportid": "24823024",
+        "receivedate": "20250109",
+        "country": "Germany",
+        "age": "66",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Gastric ulcer",
+        "outcome": "recovered/resolved"
+      },
+      {
+        "safetyreportid": "24828530",
+        "receivedate": "20250110",
+        "country": "France",
+        "age": "62",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Altered state of consciousness,Cognitive disorder,Asthenia,Salivary hypersecretion,Overdose",
+        "outcome": "recovered/resolved,recovered/resolved,recovered/resolved,recovered/resolved,recovered/resolved"
+      },
+      {
+        "safetyreportid": "24828871",
+        "receivedate": "20250110",
+        "country": "Spain",
+        "age": "104",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Syncope,Hyponatraemia,Asthenia,Dizziness,Fall",
+        "outcome": "unknown,unknown,unknown,unknown,unknown"
+      },
+      {
+        "safetyreportid": "24833163",
+        "receivedate": "20250111",
+        "country": "France",
+        "age": "71",
+        "sex": "Male",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Hypoglycaemia",
+        "outcome": "recovered/resolved"
+      },
+      {
+        "safetyreportid": "24833191",
+        "receivedate": "20250111",
+        "country": "United Kingdom",
+        "age": "66",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Mobility decreased,Hypertonia,Parkinsonism,Cognitive disorder,Hyperreflexia,Reduced facial expression,Tardive dyskinesia,Tremor,Fall,Reflexes abnormal",
+        "outcome": "recovering/resolving,recovering/resolving,recovering/resolving,recovering/resolving,recovering/resolving,recovering/resolving,recovering/resolving,recovering/resolving,recovering/resolving,recovering/resolving"
+      },
+      {
+        "safetyreportid": "24833204",
+        "receivedate": "20250111",
+        "country": "Germany",
+        "age": "58",
+        "sex": "Female",
+        "serious": "Yes",
+        "expedited": "Yes",
+        "reactions": "Chest pain,Dizziness,Blood pressure systolic decreased,Right ventricular failure,Pleural effusion,Pulmonary congestion,Pneumonia,Pericardial effusion,Renal injury,Cardiorenal syndrome,Lymphadenopathy mediastinal,Pain,Arthralgia,Cystitis escherichia",
+        "outcome": "unknown,recovered/resolved,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown"
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "psur_exec_summary": {
+    "section_id": "psur_exec_summary",
+    "section_name": "Executive Summary",
+    "status": "approved",
+    "content": "### Executive Summary\n\nSection data synthesized based on pre-computed evidence packet.",
+    "reviewer": "System Auto-Approver",
+    "review_comments": "Auto-approved during automated pipeline run.",
+    "timestamp": "2026-08-16T22:42:19.498556"
+  },
+  "psur_marketing_status": {
+    "section_id": "psur_marketing_status",
+    "section_name": "Worldwide Marketing Authorization Status and Actions",
+    "status": "approved",
+    "content": "### Worldwide Marketing Authorization Status and Actions\n\nSection data synthesized based on pre-computed evidence packet.",
+    "reviewer": "System Auto-Approver",
+    "review_comments": "Auto-approved during automated pipeline run.",
+    "timestamp": "2026-08-16T22:42:19.499666"
+  },
+  "psur_case_tabulations": {
+    "section_id": "psur_case_tabulations",
+    "section_name": "Tabulation of Individual Case Safety Reports (Demographic and Geographic Overview)",
+    "status": "approved",
+    "content": "### Tabulation of Individual Case Safety Reports (Demographic and Geographic Overview)\n\nSection data synthesized based on pre-computed evidence packet.",
+    "reviewer": "System Auto-Approver",
+    "review_comments": "Auto-approved during automated pipeline run.",
+    "timestamp": "2026-08-16T22:42:19.501345"
+  },
+  "psur_adr_summary": {
+    "section_id": "psur_adr_summary",
+    "section_name": "Summary of Adverse Drug Reactions by Preferred Term",
+    "status": "approved",
+    "content": "### Summary of Adverse Drug Reactions by Preferred Term\n\nSection data synthesized based on pre-computed evidence packet.",
+    "reviewer": "System Auto-Approver",
+    "review_comments": "Auto-approved during automated pipeline run.",
+    "timestamp": "2026-08-16T22:42:19.503060"
+  }
+}
